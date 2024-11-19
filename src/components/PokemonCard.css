@@ -1,0 +1,71 @@
+/* Estilos básicos para la tarjeta del Pokémon */
+.pokemon-card {
+    border: 2px solid #ccc; /* Borde gris suave */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    width: 180px; /* Ancho fijo para la tarjeta */
+    text-align: center; /* Centrar el contenido */
+    margin: 10px; /* Espaciado entre tarjetas */
+    background-color: #fff; /* Fondo blanco por defecto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Efecto de transición al pasar el ratón */
+  }
+  
+  /* Al pasar el ratón sobre la tarjeta */
+  .pokemon-card:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+  }
+  
+  /* Estilo para la imagen del Pokémon */
+  .pokemon-card img {
+    width: 120px; /* Ancho de la imagen */
+    height: 120px; /* Altura de la imagen */
+    object-fit: contain; /* Mantener la relación de aspecto de la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  /* Estilo para el nombre del Pokémon */
+  .pokemon-card h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333; /* Color del texto del nombre */
+    margin: 5px 0; /* Espaciado alrededor del nombre */
+  }
+  
+  /* Estilo para el tipo del Pokémon */
+  .pokemon-card p {
+    font-size: 0.9em;
+    color: #666; /* Color gris claro para el texto del tipo */
+    margin: 0;
+    text-transform: capitalize; /* Capitalizar el primer carácter de cada palabra */
+  }
+  
+  /* Estilos para el tema claro */
+  .App.light .pokemon-card {
+    background-color: #fff; /* Fondo blanco en el tema claro */
+    border: 2px solid #ccc; /* Borde gris suave */
+  }
+  
+  .App.light .pokemon-card h3 {
+    color: #333; /* Color oscuro para el nombre */
+  }
+  
+  .App.light .pokemon-card p {
+    color: #666; /* Color gris claro para el tipo */
+  }
+  
+  /* Estilos para el tema oscuro */
+  .App.dark .pokemon-card {
+    background-color: #333; /* Fondo oscuro en el tema oscuro */
+    border: 2px solid #555; /* Borde más oscuro */
+  }
+  
+  .App.dark .pokemon-card h3 {
+    color: #fff; /* Texto blanco para el nombre */
+  }
+  
+  .App.dark .pokemon-card p {
+    color: #bbb; /* Texto gris claro para el tipo */
+  }
+  
